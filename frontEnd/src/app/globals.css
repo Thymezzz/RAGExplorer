@@ -1,0 +1,143 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --theme: #86a18a;
+  --100: #f0f0f0;
+  --200: #e1e1e1;
+  --300: #c6c6c6;
+  --400: #979797;
+  --500: #777777;
+  --600: #444444;
+  --config1: #8d694e;
+  --config2: #a85281;
+  --wrong: #d85959;
+  --highlight: #c8803c;
+  --selected: #fad4b0;
+  --fp1: #c7c750;
+  --fp2: #bebada;
+  --fp3: #dac079;
+  --fp4: #80bad3;
+  --fp5: #fdb462;
+  --fp6: #fccde5;
+  --fp7: #bc80bd;
+  --fp8: #c6c6c6;
+  --evidence: #f59e0b;
+  --supporting: #0a61f4;
+  --font-times: "Times New Roman", Times, serif;
+}
+
+@theme inline {
+  --color-theme: var(--theme);
+  --color-100: var(--100);
+  --color-200: var(--200);
+  --color-300: var(--300);
+  --color-400: var(--400);
+  --color-500: var(--500);
+  --color-600: var(--600);
+  --color-config1: var(--config1);
+  --color-config2: var(--config2);
+  --color-wrong: var(--wrong);
+  --color-highlight: var(--highlight);
+  --color-selected: var(--selected);
+  --color-fp1: var(--fp1);
+  --color-fp2: var(--fp2);
+  --color-fp3: var(--fp3);
+  --color-fp4: var(--fp4);
+  --color-fp5: var(--fp5);
+  --color-fp6: var(--fp6);
+  --color-fp7: var(--fp7);
+  --color-evidence: var(--evidence);
+  --color-supporting: var(--supporting);
+  --font-family-sans: var(--font-times);
+}
+
+/* Evidence underline styles */
+.decoration-evidence {
+  text-decoration-color: var(--evidence);
+}
+
+/* Supporting sentences underline styles */
+.decoration-supporting {
+  text-decoration-color: var(--supporting);
+}
+
+/* Double underline styles for overlapping evidence and supporting */
+.decoration-double {
+  text-decoration-style: double;
+}
+
+/* Custom checkbox and radio button styles */
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background: #e5e5e5;
+}
+
+input[type="checkbox"]:checked::after,
+input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #777777;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--300);
+}
+
+/* Show scrollbar only when scrolling */
+*:hover::-webkit-scrollbar-thumb {
+  background: var(--300);
+}
+
+/* Firefox scrollbar styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+*:hover {
+  scrollbar-color: var(--300) transparent;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

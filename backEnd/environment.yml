@@ -1,0 +1,26 @@
+name: ragExplorer
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scikit-learn
+  - flask
+  - tqdm
+  - requests
+  - pip
+  - pip:
+      - torch
+      - sentence-transformers
+      - flask-cors
+      - tenacity
+      - openai
+      - langchain
+      - langchain-openai
+      - datasets
+      - pyarrow
+      - langchain-chroma
+      - filelock
+      - werkzeug
+      - python-dotenv

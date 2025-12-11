@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+old_cache/
+cache_9_1/
+cache/
+batch_precompute_500_1000.py
+batch_precompute.py
+merge_cache_1000.py
+recalculate_cache_metrics.py
+rename_cache_versions.py
+/cache_backup
+.env
+*.env
+!.env.example
