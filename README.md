@@ -1,6 +1,9 @@
-# RAG Explorer
+# RAGExplorer
 
-An interactive RAG (Retrieval-Augmented Generation) system visualization platform for exploring and comparing different RAG configurations and models.
+[![arXiv](https://img.shields.io/badge/arXiv-2601.12991-b31b1b.svg)](https://arxiv.org/abs/2601.12991)
+
+An interactive RAG (Retrieval-Augmented Generation) system visualization platform for exploring and comparing different RAG configurations and models. 
+**Accepted by IEEE Transactions on Visualization and Computer Graphics (TVCG), PacificVis 2026.**
 
 ![System Overview](assets/system_overview.png)
 
@@ -10,11 +13,6 @@ An interactive RAG (Retrieval-Augmented Generation) system visualization platfor
 - **Performance Overview View (B)** uses a matrix and coordinated bar charts to display the ranked performance of all configurations, allowing users to identify top performers and assess the average impact of each component choice.
 - **Failure Attribution View (C)** uses a Sankey diagram to visualize the flow of questions between different failure attribution when comparing two RAG configurations, allowing users to see exactly how a design change impacts RAG's failure points.
 - **Instance Diagnosis View (D)** uses a three-panel layout, allowing users to select questions from a list, use a central dual-track view to visually compare contexts and interactively test hypotheses, and inspect their full text in a details panel.
-
-### Tech Stack
-
-**Backend**: Python 3.10, Flask, LangChain, ChromaDB, Sentence Transformers
-**Frontend**: Next.js 15, React 19, TypeScript, D3.js, Tailwind CSS
 
 ## Features
 
@@ -245,3 +243,13 @@ ragvis_new/
 ```
 
 **Note**: This is a research tool for RAG system evaluation. API costs may apply based on usage.
+
+## Paper & Citation
+If you find *RAGExplorer* helpful for your research, please kindly give us a star and cite our paper:
+```bibtex
+@article{tian2026ragexplorer,
+  title   = {RAG Explorer: An Interactive Visual Analytics System for Exploring and Comparing RAG Configurations},
+  author  = {Tian, Haoyu and Feng, Yingchaojie and Wen, Zhen and Li, Haoxuan and Zhu, Minfeng and Chen, Wei},
+  journal = {arXiv preprint arXiv:2601.12991},
+  year    = {2026}
+}
