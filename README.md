@@ -1,6 +1,6 @@
 # RAG Explorer
 
-An interactive RAG (Retrieval-Augmented Generation) system visualization platform for exploring and comparing different RAG configurations, models, and parameters.
+An interactive RAG (Retrieval-Augmented Generation) system visualization platform for exploring and comparing different RAG configurations and models.
 
 ![System Overview](assets/system_overview.png)
 
@@ -25,6 +25,15 @@ An interactive RAG (Retrieval-Augmented Generation) system visualization platfor
 - **Concurrent Processing**: Parallel evaluation with customizable worker count
 - **Smart Caching**: Persistent cache for faster re-evaluation
 - **Comprehensive Metrics**: Accuracy, Recall, MRR, MAP
+
+## Dataset
+
+This project uses the **MultiHop-RAG dataset** released by Yixuan Tang et al.
+Please refer to the original repository for details:
+
+https://github.com/yixuantt/MultiHop-RAG
+
+If you use this dataset, please cite the original paper accordingly.
 
 ## Quick Start
 
