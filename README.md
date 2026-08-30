@@ -1,6 +1,6 @@
 # RAGExplorer
 
-[![TVCG](https://ieeexplore.ieee.org/document/11523613)
+[![TVCG](https://img.shields.io/badge/TVCG-IEEE-blue.svg)](https://doi.org/10.1109/TVCG.2026.3694443)
 
 An interactive RAG (Retrieval-Augmented Generation) system visualization platform for exploring and comparing different RAG configurations and models. 
 **Accepted by IEEE Transactions on Visualization and Computer Graphics (TVCG), PacificVis 2026.**
